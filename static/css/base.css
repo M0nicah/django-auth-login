@@ -1,0 +1,41 @@
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+.links{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3.5rem;
+    padding: 0.4rem;
+
+}
+.arrow{
+    margin-left: 5px;
+}

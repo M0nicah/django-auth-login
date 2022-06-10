@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    {% block styles %}
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    {% endblock %}
+  </head>
+  <body>
+    <div>
+      <ul class="nav links justify-content-center bg-dark p-3">
+        <li class="nav-item">
+          <a
+            class="nav-link active btn btn-dark text-light"
+            aria-current="page"
+            href="#"
+            >Active</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-dark text-light" href="{% url 'login' %}"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-dark text-light" href="admin">Admin</a>
+        </li>
+      </ul>
+    </div>
+    <h3 class="text">This is an authentication project</h3>
+    <div class="image">
+      <lottie-player
+        src="https://assets6.lottiefiles.com/private_files/lf30_fw6h59eu.json"
+        background="transparent"
+        speed="1"
+        style="width: 700px; height: 630px"
+        autoplay
+      ></lottie-player>
+    </div>
+
+    
+
+    {% block content %} {% endblock %}
+
+    <div class="footer">
+      <p class="text-muted fs-6">Made with 💖 by Monica Masae</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
